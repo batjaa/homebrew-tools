@@ -2,7 +2,7 @@ class Tendies < Formula
   desc "Realized Schwab P&L CLI"
   homepage "https://github.com/batjaa/tendies"
   url "https://api.github.com/repos/batjaa/tendies/tarball/v0.1.0"
-  sha256 "238b2af1853f77268c9e1dce7dd745d66f25357e52991137e0e7ab51d490c169"
+  sha256 "7c2624171c6c1fd88358d7fadf23cde49592566060ee1f48c612799ba9873d70"
 
   depends_on "go" => :build
 
