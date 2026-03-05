@@ -5,20 +5,20 @@
 class Tendies < Formula
   desc "Realized Schwab P&L CLI"
   homepage "https://github.com/batjaa/tendies"
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/batjaa/tendies/releases/download/v0.3.1/tendies_0.3.1_darwin_amd64.tar.gz"
-      sha256 "eb511bbd046ade522b8d34aa710e9c1b5b6acc610a596a828a44a82d1a1fd462"
+      url "https://github.com/batjaa/tendies/releases/download/v0.4.0/tendies_0.4.0_darwin_amd64.tar.gz"
+      sha256 "6b058dcad2a52542ec57d0b9069b9c6102dba4c6c406aa0ea8e3b21e6bb122f4"
 
       define_method(:install) do
         bin.install "tendies"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/batjaa/tendies/releases/download/v0.3.1/tendies_0.3.1_darwin_arm64.tar.gz"
-      sha256 "275c5b98147d54b0d5e6a5f0b0fc6438b3f53595f430e9c965d9b09c07ce8aa1"
+      url "https://github.com/batjaa/tendies/releases/download/v0.4.0/tendies_0.4.0_darwin_arm64.tar.gz"
+      sha256 "5eae4f3b72ff8e1815ca66cab3a69f42d2837b4d8d3d8ece5150518a2a927276"
 
       define_method(:install) do
         bin.install "tendies"
@@ -28,15 +28,15 @@ class Tendies < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batjaa/tendies/releases/download/v0.3.1/tendies_0.3.1_linux_amd64.tar.gz"
-      sha256 "d6f687c5f6f498f30bf1355bdb65d7f3b8c063a3a9f341f1916134e49f63bbaf"
+      url "https://github.com/batjaa/tendies/releases/download/v0.4.0/tendies_0.4.0_linux_amd64.tar.gz"
+      sha256 "7996953710036aed4701f56e65e6214eac708a5f660d24e9097b5d7096e6e013"
       define_method(:install) do
         bin.install "tendies"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/batjaa/tendies/releases/download/v0.3.1/tendies_0.3.1_linux_arm64.tar.gz"
-      sha256 "cdcb1e257604fa22dc7fe406251ba761bfb1b5549866b66e00222bd77116d093"
+      url "https://github.com/batjaa/tendies/releases/download/v0.4.0/tendies_0.4.0_linux_arm64.tar.gz"
+      sha256 "c9f11c3e9517918c757f5c62613927dde209af717fe0bd484d00b62c25e47568"
       define_method(:install) do
         bin.install "tendies"
       end
