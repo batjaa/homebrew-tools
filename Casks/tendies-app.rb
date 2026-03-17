@@ -1,6 +1,6 @@
 cask "tendies-app" do
-  version "0.1.0"
-  sha256 "0fbf726e478f39be8b0083b8380bb0215f811453e6bf224d25a8ca0811c87002"
+  version "0.2.0"
+  sha256 "7e919c4583858192debfdfa1d9202cc781718846b083bf81da483f866b2a8426"
 
   url "https://github.com/batjaa/tendies-app/releases/download/v#{version}/TendiesApp.zip"
   name "TendiesApp"
